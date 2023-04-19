@@ -19,31 +19,31 @@ public class Program
 
         Console.WriteLine("-------------------");
         Console.WriteLine("Привет друг, это программа для того чтобы найти нужную музыку по жанру, а также её текст,пожалуйста введи название своего жанра: ");
-        Console.WriteLine("Народная музыка");
-        Console.WriteLine("Романс");
-        Console.WriteLine("Классическая музыка");
+        Console.WriteLine("народная музыка");
+        Console.WriteLine("романс");
+        Console.WriteLine("классическая музыка");
         Console.WriteLine("-------------------");
         string answer = Console.ReadLine().ToLower();
 
         switch (answer)
         {
-            case "Народная музыка":
+            case "народная музыка":
                 Console.WriteLine("-------------------");
                 Console.WriteLine("Выберете музыку из  списка:");
-                Console.WriteLine("Ах вы, сени, мои сени");
-                Console.WriteLine("Ах ты, душечка");
+                Console.WriteLine("ах вы сени мои сени");
+                Console.WriteLine("ах ты душечка");
                 Console.WriteLine("-------------------");
                 string songgenre = Console.ReadLine().ToLower();
                 switch (songgenre)
                 {
-                    case "Ах вы, сени, мои сени":
+                    case "ах вы сени мои сени":
                         Console.WriteLine("-------------------");
                         Console.WriteLine("Текст этой песни: ");
                         seni.GetMusic();
                         Console.WriteLine("-------------------");
                         break;
 
-                    case "Ах ты, душечка":
+                    case "ах ты душечка":
                         Console.WriteLine("-------------------");
                         Console.WriteLine("Текст этой песни: ");
                         dush.GetMusic();
@@ -54,20 +54,20 @@ public class Program
             case "романс":
                 Console.WriteLine("-------------------");
                 Console.WriteLine("Выберете музыку из списка:");
-                Console.WriteLine("А напоследок я скажу");
-                Console.WriteLine("Ах, эти чёрные глаза");
+                Console.WriteLine("а напоследок я скажу");
+                Console.WriteLine("ах эти чёрные глаза");
                 Console.WriteLine("-------------------");
                 string songgenre1 = Console.ReadLine().ToLower();
                 switch (songgenre1)
                 {
-                    case "А напоследок я скажу":
+                    case "а напоследок я скажу":
                         Console.WriteLine("-------------------");
                         Console.WriteLine("Текст этой песни: ");
                         napos.GetMusic();
                         Console.WriteLine("-------------------");
                         break;
 
-                    case "Ах, эти чёрные глаза":
+                    case "ах эти чёрные глаза":
                         Console.WriteLine("-------------------");
                         Console.WriteLine("Текст этой песни: ");
                         glaza.GetMusic();
@@ -75,23 +75,23 @@ public class Program
                         break;
                 }
                 break;
-            case "Классическая музыка":
+            case "классическая музыка":
                 Console.WriteLine("-------------------");
                 Console.WriteLine("Выберете музыку списка:");
-                Console.WriteLine("Классические розы");
-                Console.WriteLine("На заре ты её не буди");
+                Console.WriteLine("елассические розы");
+                Console.WriteLine("на заре ты её не буди");
                 Console.WriteLine("-------------------");
                 string songgenre2 = Console.ReadLine().ToLower();
                 switch (songgenre2)
                 {
-                    case "Классические розы":
+                    case "классические розы":
                         Console.WriteLine("-------------------");
                         Console.WriteLine("Текст этой песни: ");
                         roz.GetMusic();
                         Console.WriteLine("-------------------");
                         break;
 
-                    case "На заре ты её не буди":
+                    case "на заре ты её не буди":
                         Console.WriteLine("-------------------");
                         Console.WriteLine("Текст этой песни: ");
                         zar.GetMusic();
